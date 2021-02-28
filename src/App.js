@@ -10,6 +10,8 @@ function App() {
     const fetchData = async () => {
       let responseJson;
       // put data fetching code here!
+      const result = await fetch("http://demo1390455.mockable.io/articles");
+      responseJson = await result.json();
       setFetchedData(responseJson);
     };
 
@@ -23,7 +25,7 @@ function App() {
       <Switch>
         <Route
           exact
-          path={`/articlelist/:slug`}
+          path={"/articlelist/:slug"}
           render={({ match }) => {
             // getting the parameters from the url and passing
             // down to the component as props
