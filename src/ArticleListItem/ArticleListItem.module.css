@@ -1,0 +1,38 @@
+.uglyItem {
+  font-size: large;
+  color: rgb(190, 0, 0);
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgba(180, 0, 0, 0.508), 15%, white 25%);
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  box-shadow: 5px 5px 10px 10px rgba(128, 128, 128, 0.39);
+}
+
+.time {
+  color: black;
+  font-weight: bold;
+  font-size: small;
+  font-family: sans-serif;
+  display: block;
+}
+
+.shortLine {
+  color: black;
+  font-size: small;
+  font-family: sans-serif;
+  /* margin-top: 20px; */
+}
+
+.listItem {
+  list-style-type: none;
+}
+
+.disappear {
+  display: none;
+}

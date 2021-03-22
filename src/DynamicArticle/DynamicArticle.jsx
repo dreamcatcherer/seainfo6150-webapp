@@ -2,14 +2,13 @@ import React from "react";
 import { Route, Switch, Link, useRouteMatch } from "react-router-dom";
 import HTMLText from "../HTMLText/HTMLText";
 import ArticleList from "../ArticleList/ArticleList"
+import css from "./DynamicArticle.module.css"
 
 const DynamicArticle = (props) => {
-  //let {url} = useRouteMatch({path:'/'});
-  //console.log("url", url)
-  //console.log("1",<ArticleList/>)
   return (
-    <article>
-      <Link to={'/articlelist'}> Back</Link>
+    <article >
+      <Link to={'/articlelist'} className = {css.button}>   Back</Link>
+      <div className = {css.articleBody}>
       <header>
         <h1>{props.article.title}</h1>
         <address>
@@ -20,6 +19,7 @@ const DynamicArticle = (props) => {
         <time dateTime={props.article.timeStamp}>{props.article.displayDate}</time>
       </header>
       <HTMLText text={props.article.text} />
+      </div>
     </article>
     
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import ArticleListItem from "../ArticleListItem/ArticleListItem"
-
+import css from "./ArticleList.module.css"
 function ArticleList(props) {
   const fetchedData = props.articles
 
@@ -18,9 +18,9 @@ function ArticleList(props) {
   }
 
   return (
-    <section>
-        {displayContent}
-    </section>
+    <ul className = {css.articleList}>
+      {displayContent}
+    </ul>
   );
 }
 

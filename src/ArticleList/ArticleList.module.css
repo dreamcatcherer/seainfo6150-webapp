@@ -1,0 +1,10 @@
+.page {
+  background: rgba(128, 128, 128, 0.644);
+  border-style: dotted;
+  border-width: 2px;
+  border-color: rgb(75, 75, 75);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px;
+  box-shadow: 0px 0px 15px 15px rgba(255, 0, 0, 0.39);
+}
