@@ -2,6 +2,8 @@ import React from "react";
 import HTMLText from "../HTMLText/HTMLText.jsx";
 import styles from "./DynamicArticle.module.css";
 import { Link } from "react-router-dom";
+import ArticleImage from "../ArticleImage/ArticleImage";
+import imageStyles from "../ArticleImage/ArticleImage.module.css";
 
 const DynamicArticle = (props) => {
   return (
@@ -9,7 +11,11 @@ const DynamicArticle = (props) => {
       <Link to="/articlelist" className={styles.back}>
         Back
       </Link>
+
       <article className={styles.article}>
+        
+        <ArticleImage url = {props.article.image._url} />
+        
         <header>
           <h1>{props.article.title}</h1>
           <address>

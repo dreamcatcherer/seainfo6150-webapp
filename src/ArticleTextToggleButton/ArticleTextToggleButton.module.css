@@ -1,6 +1,10 @@
-.button {
-    background: #c00;
-    border-radius: 10px;
-    color: #fff;
-    padding: 10px;
+.itemButton {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  background-color: #cf4646;
+  font-size: 15px;
+  color: white;
+  box-shadow: 2px 2px black;
 }
