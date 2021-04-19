@@ -4,3 +4,24 @@
     color: #fff;
     padding: 10px;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  .button {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 13px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .button {
+    font-size: 12px;
+  }
+}

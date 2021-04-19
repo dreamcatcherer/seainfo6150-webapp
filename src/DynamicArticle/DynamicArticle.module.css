@@ -16,3 +16,7 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+.text{
+ columns: 4 200px;
+}
